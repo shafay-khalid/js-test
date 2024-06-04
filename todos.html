@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+     <!-- bootstrap link  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- toastify link     -->
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+ <link rel="stylesheet" href="todos.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div id="topbar">
+            <p class="m-0"></p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Advanced JavaScript</a>
+                <a id="showemail" class="navbar-brand" href="#"></a>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-grow-1 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center border p-3 m-5">
+                    <h3>Handle ToDos</h3>
+                    <input id="input" type="text" placeholder="Enter ToDo">
+                    <button class="btn btn-success m-1" onclick="handleCreate()">Create ToDo</button><br>
+                    <button class="btn btn-success m-1" onclick="handleRead()">Read ToDos</button> <div id="output" class="output" type="text" placeholder="console"> </div><br>
+                    <input id="number" type="number" placeholder="Enter Id"><button class="btn btn-success m-1" onclick="handleUpdate()">Update ToDo </button><br>
+                    <button class="btn btn-success m-1" onclick="handleDelete()">Delete ToDo</button><br>
+                    <button class="btn btn-success m-1" onclick="handleTable()">Show Table </button><br><div id="table" type="text" placeholder="Table"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+     <!-- tostify js  -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   
+    <script src="todos.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.leftSection{
+    /* display: inline; */
+    /* margin-right: 300px;
+    padding-right: 300px; */
+}
+.input {
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+}
+.card{
+    width:400px ;
+    display:flex ;
+    text-align: center;
+    justify-content: center;
+}
